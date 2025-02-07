@@ -1,0 +1,23 @@
+name: KindaHardcore
+api: "1.0"
+version: "1.0"
+main: one.thetent.mc.KindaHardcore
+api-version: 1.21.4
+description: A plugin that randomly teleports players upon death
+author: Hobo
+commands:
+  khctoggle:
+    description: Toggles auto-teleport for a player
+    usage: /khctoggle <player>
+    permission: khc.toggle
+    permission-message: You do not have permission to use this command.
+  khcreload:
+    description: Reloads the KHC plugin configuration
+    usage: /khcreload
+    permission: khc.reload
+    permission-message: You do not have permission to use this command.
+permissions:
+  khc.toggle:
+    default: true
+  khc.reload:
+    default: op
